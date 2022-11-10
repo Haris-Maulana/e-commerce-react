@@ -1,76 +1,33 @@
-import './Main.scss'
+import "./Main.scss";
+import { itemList } from "./Aimage.js";
+import { useState } from "react";
 
-const Main = () => {
+const Main = ({handleClick}) => {
+
   return (
     <main>
+      <h1>
+        Best Item
+      </h1>
+
       <div className="grid-container">
-        
-        <div className="container-main">
-          <div className="img-thumbnail"></div>
-          <div className="info-item">
-            <div className="info-title">Title</div>
-            <div className="info-desc">
-              <div className="desc">this is desc</div>
-              <div className="prices">$.5</div>
+        {itemList.map((itemlist) => (
+          <div key={itemlist.image} className="item-container">
+            <div className="thumbnail-container">
+              <img src={itemlist.image} alt="" />
+              <div className="addcart">
+                <button onClick={()=>{handleClick(itemlist)}}>+</button>
+              </div>
+            </div>
+            <div className="item-desc">
+              <div className="title">{itemlist.Title}</div>
+              <div className="desc">
+                {itemlist.description}
+                <div className="prices">{itemlist.prices}$</div>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div className="container-main">
-          <div className="img-thumbnail"></div>
-          <div className="info-item">
-            <div className="info-title">Title</div>
-            <div className="info-desc">
-              <div className="desc">this is desc</div>
-              <div className="prices">$.5</div>
-            </div>
-          </div>
-        </div>
-
-        <div className="container-main">
-          <div className="img-thumbnail"></div>
-          <div className="info-item">
-            <div className="info-title">Title</div>
-            <div className="info-desc">
-              <div className="desc">this is desc</div>
-              <div className="prices">$.5</div>
-            </div>
-          </div>
-        </div>
-
-        <div className="container-main">
-          <div className="img-thumbnail"></div>
-          <div className="info-item">
-            <div className="info-title">Title</div>
-            <div className="info-desc">
-              <div className="desc">this is desc</div>
-              <div className="prices">$.5</div>
-            </div>
-          </div>
-        </div>
-
-        <div className="container-main">
-          <div className="img-thumbnail"></div>
-          <div className="info-item">
-            <div className="info-title">Title</div>
-            <div className="info-desc">
-              <div className="desc">this is desc</div>
-              <div className="prices">$.5</div>
-            </div>
-          </div>
-        </div>
-
-        <div className="container-main">
-          <div className="img-thumbnail"></div>
-          <div className="info-item">
-            <div className="info-title">Title</div>
-            <div className="info-desc">
-              <div className="desc">this is desc</div>
-              <div className="prices">$.5</div>
-            </div>
-          </div>
-        </div>
-
+        ))}
       </div>
     </main>
   );

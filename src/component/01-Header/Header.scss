@@ -12,8 +12,22 @@
 
 .head h1 {
   font-size: 5rem;
+  white-space: nowrap;
 }
 
 .head span {
-  color: rgb(108, 255, 186);
+  color: var(--theme-color);
+}
+
+@media (max-width:1000px) {
+  .head h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width:550px) {
+  .head {
+    transform: scale(70%);
+    height: 50vh;
+  }
 }

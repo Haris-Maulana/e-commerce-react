@@ -1,5 +1,6 @@
 import './Navbar.scss'
-import Menu from '../../Assets/interfaces/main-menu.svg'
+import Menu from './../../Assets/interfaces/main-menu.png'
+import Cart from "./../../Assets/interfaces/shopping-cart.png";
 
 const Navbar = () => {
 
@@ -24,6 +25,10 @@ const Navbar = () => {
         <input type="text" placeholder='Search item...' name='searh' onChange={onChangeInput}/>
       </div>
       <div className="rt-side">
+      <div className="cart">
+          <span>0</span>
+          <img src={Cart} alt="" />
+        </div>
         <div className="menu">
           <img src={Menu} alt="" />
         </div>
