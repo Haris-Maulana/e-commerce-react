@@ -1,0 +1,19 @@
+:root {
+  --display-header : flex;
+}
+
+.head {
+  display: var(--display-header);
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.head h1 {
+  font-size: 5rem;
+}
+
+.head span {
+  color: rgb(108, 255, 186);
+}
