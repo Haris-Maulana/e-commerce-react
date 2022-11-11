@@ -16,5 +16,10 @@
 body {
   margin: 0;
   font-family: var(--font-Paragraph);
-  color: #1b1b1b;
+  color: #fff;
+  background-color: #051923;
+}
+
+a, a:hover , a:focus, a:visited {
+  text-decoration: none;
 }

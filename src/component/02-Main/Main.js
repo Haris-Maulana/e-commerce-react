@@ -2,15 +2,15 @@ import "./Main.scss";
 import { itemList } from "./Aimage.js";
 import { useState } from "react";
 
-const Main = ({handleClick}) => {
+const Main = ({handleClick, title}) => {
 
   return (
     <main>
-      <h1>
-        Best Item
-      </h1>
 
       <div className="grid-container">
+      <h1>
+        {title}
+      </h1>
         {itemList.map((itemlist) => (
           <div key={itemlist.image} className="item-container">
             <div className="thumbnail-container">

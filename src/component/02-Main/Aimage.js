@@ -11,7 +11,7 @@ export const itemList = [
     id: 2,
     Title: "Bussiness Card",
     description:
-      "This is the best backpack for kid 2020. this backpack can carry your lugage easily",
+      "Best busisines card for your perfect identity",
     image: "images/business-card.jpg",
     prices: "10",
   },
@@ -19,7 +19,7 @@ export const itemList = [
     id: 3,
     Title: "Clothes",
     description:
-      "This is the best backpack for kid 2020. this backpack can carry your lugage easily",
+      "Some clothes that been worn",
     image: "images/clothes.webp",
     prices: "450",
   },
@@ -27,7 +27,7 @@ export const itemList = [
     id: 4,
     Title: "Dress",
     description:
-      "This is the best backpack for kid 2020. this backpack can carry your lugage easily",
+      "Best for you girlfriend dress and she will love you so much",
     image: "images/Dress.jpg",
     prices: "2.500",
   },
@@ -35,7 +35,7 @@ export const itemList = [
     id: 5,
     Title: "Hat",
     description:
-      "This is the best backpack for kid 2020. this backpack can carry your lugage easily",
+      "Some hat that protect you under the sun",
     image: "images/Hats.jpg",
     prices: "125",
   },
@@ -43,7 +43,7 @@ export const itemList = [
     id: 6,
     Title: "High Heels",
     description:
-      "This is the best backpack for kid 2020. this backpack can carry your lugage easily",
+      "Woman heel are like men beard",
     image: "images/high-heels.jpg",
     prices: "525",
   },
@@ -51,7 +51,7 @@ export const itemList = [
     id: 7,
     Title: "Black Pill",
     description:
-      "This is the best backpack for kid 2020. this backpack can carry your lugage easily",
+      "This pill can make you 10 times younger",
     image: "images/pill-mock-up.webp",
     prices: "10.000",
   },
@@ -59,7 +59,7 @@ export const itemList = [
     id: 8,
     Title: "Scarf",
     description:
-      "This is the best backpack for kid 2020. this backpack can carry your lugage easily",
+      "Perfect for winter that can make you looks great",
     image: "images/scarf.webp",
     prices: "250",
   },
@@ -68,7 +68,7 @@ export const itemList = [
     Title: "Totebag",
 
     description:
-      "This is the best backpack for kid 2020. this backpack can carry your lugage easily",
+      "Totebag that you can carry around without having much worries about style",
     image: "images/Totebag.jpg",
     prices: "5.000",
   },
@@ -76,7 +76,7 @@ export const itemList = [
     id: 10,
     Title: "Man Shoes",
     description:
-      "This is the best backpack for kid 2020. this backpack can carry your lugage easily",
+      "Fine Gentleman",
     image: "images/Shoes.jpg",
     prices: "1.299",
   },
@@ -84,7 +84,7 @@ export const itemList = [
     id: 11,
     Title: "Sweater",
     description:
-      "This is the best backpack for kid 2020. this backpack can carry your lugage easily",
+      "Good for introvert",
     image: "images/sweater.webp",
     prices: "400",
   }

@@ -29,9 +29,6 @@ const Navbar = () => {
           <span>0</span>
           <img src={Cart} alt="" />
         </div>
-        <div className="menu">
-          <img src={Menu} alt="" />
-        </div>
       </div>
     </nav>
     );

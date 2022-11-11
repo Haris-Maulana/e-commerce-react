@@ -1,5 +1,5 @@
 :root {
-  --display-header : flex;
+  --display-header: flex;
 }
 
 .head {
@@ -13,21 +13,21 @@
 .head h1 {
   font-size: 5rem;
   white-space: nowrap;
-}
-
-.head span {
   color: var(--theme-color);
 }
 
-@media (max-width:1000px) {
+.head span {
+  color: #FCEFF9;
+}
+
+@media (max-width: 1000px) {
   .head h1 {
     font-size: 2rem;
   }
 }
 
-@media (max-width:550px) {
+@media (max-width: 550px) {
   .head {
     transform: scale(70%);
-    height: 50vh;
   }
 }

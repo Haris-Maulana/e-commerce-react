@@ -1,13 +1,12 @@
 :root {
-  --theme-color :#5BD39B;
-
+  --theme-color :#A63D40;
 }
 
 nav {
   display: flex;
   width: 100%;
   padding: 2rem 0;
-  background-color: var(--theme-color);
+  background-color: #1b1b1b;
   color: white;
   font-size: 1.25rem;
   align-items: center;
@@ -32,10 +31,11 @@ nav {
 
 .md-side input {
   width: 70%;
-  border: 1px solid rgb(224, 224, 224);
+  border: 1px solid rgb(125, 124, 124);
   padding: .25rem 1.5rem;
   font-size: 1.25rem;
   font-family: var(--font-Paragraph);
+  border-radius: 7px;
 }
 
 .rt-side {
@@ -43,6 +43,7 @@ nav {
   width: 25%;
   display: flex;
   justify-content: flex-end;
+  padding: 0 2rem;
 }
 
 .menu {
@@ -72,10 +73,17 @@ nav {
 }
 
 .cart span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  top: -15px;
-  right: 15px;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: -20px;
+  right: 6px;
   font-size: 1rem;
+  background-color: red;
+  border-radius: 50%;
 }
 
 @media (max-width:1000px) {
