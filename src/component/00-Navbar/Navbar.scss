@@ -1,5 +1,6 @@
 :root {
   --theme-color :#A63D40;
+  --cart-visible : flex;
 }
 
 nav {
@@ -86,6 +87,82 @@ nav {
   border-radius: 50%;
 }
 
+.user-cart {
+  display: var(--cart-visible);
+  width: 80%;
+  top: 25%;
+  left: 10%;
+  position: fixed;
+  height: 500px;
+  z-index: 100;
+  flex-direction: column;
+  background-color: var(--theme-color);
+  color: black;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.quit-btn {
+  display: flex;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 1rem;
+  top: 1rem;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #1b1b1b;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.userCartList {
+  display: flex;
+  width: 80%;
+  margin: 1rem auto;
+  box-shadow: 0 1px 12px 3px rgba(0, 0, 0, .3);
+  border-radius: 15px;
+  text-overflow: ellipsis;
+  background-color: #fff;
+}
+
+.img-cart {
+  display: flex;
+  width:10%;
+  aspect-ratio: 1/1;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-cart img{
+  display: block;
+  max-width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.title-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0  auto;
+}
+
+.quantity {
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
 @media (max-width:1000px) {
   .md-side {
     display: none;
@@ -98,5 +175,17 @@ nav {
 @media (max-width:700px) {
   .lt-side {
     font-size: 1.5rem;
+  }
+
+  .userCartList {
+    flex-direction: column;
+  }
+  .img-cart {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .quit-btn {
+    top: 0;
+    right: 0;
   }
 }
