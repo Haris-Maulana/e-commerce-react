@@ -56,15 +56,7 @@ const Navbar = ({ cartNumber, cart, cartFilter }) => {
               </div>
               <div className="quantity">
                 <div className="quantityTitle">Quantity</div>
-                <div className="quantityNum">{cartlist.quantity}</div>{" "}
-              </div>
-            </div>
-            <div className="testTotal">
-              <div className="Total">
-                <h6>Total</h6>
-              </div>
-              <div className="totalNum">
-                {cartlist.prices * cartlist.quantity}
+                <div className="quantityNum">{cartlist.quantity}</div>
               </div>
             </div>
           </div>

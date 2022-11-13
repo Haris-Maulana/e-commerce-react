@@ -16,7 +16,6 @@ function App() {
     cart.push(itemlist);
     itemlist.quantity += 1;
     setCartNumber(cartNumber + 1);
-    console.log(cart);
   };
 
   return (
