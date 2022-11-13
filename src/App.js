@@ -8,9 +8,13 @@ import Whatsapp from "./component/03-Whatsapp/Whatsapp";
 import Footer from "./component/04-Footer/Footer.js";
 
 function App() {
+  
   const [cart, setCart] = useState([]);
   const [cartNumber, setCartNumber] = useState(0)
   const cartFilter = cart.filter((item, Title) => cart.indexOf(item) === Title);
+
+ 
+
   const handleClick = (itemlist) => {
     cart.push(itemlist)
     itemlist.quantity += 1;

@@ -16,7 +16,12 @@ const Navbar = ({ cartNumber, cart, cartFilter }) => {
   };
 
   const cartFunction = () => {
-    console.log(cartFilter);
+    const getCart = getComputedStyle(root).getPropertyValue("--cart-visible");
+    if (getCart === 'none') {
+      root.style.setProperty("--cart-visible", "flex");
+    } else {
+      root.style.setProperty("--cart-visible", "none");
+    }
   };
 
   return (
@@ -39,20 +44,28 @@ const Navbar = ({ cartNumber, cart, cartFilter }) => {
         </div>
       </nav>
       <div className="user-cart">
-        <button className="quit-btn">
-          X
-        </button>
+        <button className="quit-btn" onClick={cartFunction}>X</button>
         {cartFilter.map((cartlist) => (
-          <div className="userCartList" key={cartlist.quantity}>
-            <div className="img-cart">
-              <img src={cartlist.image} alt="" />
+          <div key={cartlist.quantity * cartlist.prices + cartlist.quantity}>
+            <div className="userCartList">
+              <div className="img-cart">
+                <img src={cartlist.image} alt="" />
+              </div>
+              <div className="title-cart">
+                <h4>{cartlist.Title}</h4>
+              </div>
+              <div className="quantity">
+                <div className="quantityTitle">Quantity</div>
+                <div className="quantityNum">{cartlist.quantity}</div>{" "}
+              </div>
             </div>
-            <div className="title-cart">
-              <h4>{cartlist.Title}</h4>
-            </div>
-            <div className="quantity">
-              <div className="quantityTitle">Quantity</div>
-              <div className="quantityNum">{cartlist.quantity}</div>
+            <div className="testTotal">
+              <div className="Total">
+                <h6>Total</h6>
+              </div>
+              <div className="totalNum">
+                {cartlist.prices * cartlist.quantity}
+              </div>
             </div>
           </div>
         ))}
