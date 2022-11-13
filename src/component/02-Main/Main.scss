@@ -10,7 +10,6 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 10%;
 }
 
 main h1 {
@@ -21,7 +20,6 @@ main h1 {
   color: var(--theme-color);
   border-radius: 2rem;
   align-items: center;
-  padding: .5rem 2rem;
   box-shadow: 0px 2px 10px 15px rgba(0, 0, 0, .3);
 }
 
@@ -30,6 +28,7 @@ main h1 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   row-gap: 50px;
   column-gap: 30px;
+    transform: scale(75%);
 }
 
 .item-container {
