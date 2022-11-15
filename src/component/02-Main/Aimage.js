@@ -1,7 +1,7 @@
 export const itemList = [
   {
     id: 1,
-    Title: "Backpack Kid",
+    title: "Backpack Kid",
     description:
       "This is the best backpack for kid 2020. this backpack can carry your lugage easily",
     image: "images/back-pack kid.jpg",
@@ -10,7 +10,7 @@ export const itemList = [
   },
   {
     id: 2,
-    Title: "Bussiness Card",
+    title: "Bussiness Card",
     description:
       "Best busisines card for your perfect identity",
     image: "images/business-card.jpg",
@@ -19,7 +19,7 @@ export const itemList = [
   },
   {
     id: 3,
-    Title: "Clothes",
+    title: "Clothes",
     description:
       "Some clothes that been worn",
     image: "images/clothes.jpg",
@@ -28,7 +28,7 @@ export const itemList = [
   },
   {
     id: 4,
-    Title: "Dress",
+    title: "Dress",
     description:
       "Best for you girlfriend dress and she will love you so much",
     image: "images/Dress.jpg",
@@ -37,7 +37,7 @@ export const itemList = [
   },
   {
     id: 5,
-    Title: "Hat",
+    title: "Hat",
     description:
       "Some hat that protect you under the sun",
     image: "images/Hats.jpg",
@@ -46,7 +46,7 @@ export const itemList = [
   },
   {
     id: 6,
-    Title: "High Heels",
+    title: "High Heels",
     description:
       "Woman heel are like men beard",
     image: "images/high-heels.jpg",
@@ -55,7 +55,7 @@ export const itemList = [
   },
   {
     id: 7,
-    Title: "Black Pill",
+    title: "Black Pill",
     description:
       "This pill can make you 10 times younger",
     image: "images/pill-mock-up.webp",
@@ -64,7 +64,7 @@ export const itemList = [
   },
   {
     id: 8,
-    Title: "Scarf",
+    title: "Scarf",
     description:
       "Perfect for winter that can make you looks great",
     image: "images/scarf.jpg",
@@ -73,7 +73,7 @@ export const itemList = [
   },
   {
     id: 9,
-    Title: "Totebag",
+    title: "Totebag",
 
     description:
       "Totebag that you can carry around without having much worries about style",
@@ -83,7 +83,7 @@ export const itemList = [
   },
   {
     id: 10,
-    Title: "Man Shoes",
+    title: "Man Shoes",
     description:
       "Fine Gentleman",
     image: "images/Shoes.jpg",
@@ -92,7 +92,7 @@ export const itemList = [
   },
   {
     id: 11,
-    Title: "Sweater",
+    title: "Sweater",
     description:
       "Good for introvert",
     image: "images/sweater.jpg",

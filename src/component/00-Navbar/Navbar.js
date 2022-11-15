@@ -1,28 +1,18 @@
 import "./Navbar.scss";
 import Menu from "./../../Assets/interfaces/main-menu.png";
 import Cart from "./../../Assets/interfaces/shopping-cart.png";
-import { createElement, useEffect } from "react";
+import { useState, useEffect } from "react";
 
-const Navbar = ({ cartNumber, cart, cartFilter }) => {
-  const root = document.querySelector(":root");
-  const onChangeInput = () => {
-    const inputSearch = document.querySelector("input");
-    if (inputSearch.value != null) {
-      root.style.setProperty("--display-header", "none");
-    }
-    if (inputSearch.value === "") {
-      root.style.setProperty("--display-header", "flex");
-    }
-  };
+const Navbar = ({
+  cartNumber,
+  cartFilter,
+  onChangeInput,
+  cartFunction,
+  searchTerm,
+  itemList
+}) => {
 
-  const cartFunction = () => {
-    const getCart = getComputedStyle(root).getPropertyValue("--cart-visible");
-    if (getCart === 'none') {
-      root.style.setProperty("--cart-visible", "flex");
-    } else {
-      root.style.setProperty("--cart-visible", "none");
-    }
-  };
+  const Title = itemList.Title
 
   return (
     <>
@@ -30,10 +20,11 @@ const Navbar = ({ cartNumber, cart, cartFilter }) => {
         <div className="lt-side">H-commerce</div>
         <div className="md-side">
           <input
-            type="text"
+            type='search'
             placeholder="Search item..."
-            name="searh"
+            name="name"
             onChange={onChangeInput}
+            value={searchTerm}
           />
         </div>
         <div className="rt-side">
@@ -44,7 +35,9 @@ const Navbar = ({ cartNumber, cart, cartFilter }) => {
         </div>
       </nav>
       <div className="user-cart">
-        <button className="quit-btn" onClick={cartFunction}>X</button>
+        <button className="quit-btn" onClick={cartFunction}>
+          X
+        </button>
         {cartFilter.map((cartlist) => (
           <div key={cartlist.quantity * cartlist.prices + cartlist.quantity}>
             <div className="userCartList">

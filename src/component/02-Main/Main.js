@@ -1,17 +1,22 @@
 import "./Main.scss";
-import { itemList } from "./Aimage.js";
 import { useState } from "react";
 
-const Main = ({handleClick, title}) => {
+const Main = ({handleClick, Title,itemList,searchTerm}) => {
 
   return (
     <main>
 
       <div className="grid-container">
       <h1>
-        {title}
+        {Title}
       </h1>
-        {itemList.map((itemlist) => (
+        {itemList.filter((itemlist)=>{
+          if(searchTerm === ''){
+            return itemlist
+          } else if (itemlist.title.toLowerCase().includes(searchTerm.toLowerCase())){
+            return itemlist
+          }
+        }).map((itemlist) => (
           <div key={itemlist.image} className="item-container">
             <div className="thumbnail-container">
               <img src={itemlist.image} alt="" />
@@ -20,7 +25,7 @@ const Main = ({handleClick, title}) => {
               </div>
             </div>
             <div className="item-desc">
-              <div className="title">{itemlist.Title}</div>
+              <div className="title">{itemlist.title}</div>
               <div className="desc">
                 {itemlist.description}
                 <div className="prices">{itemlist.prices}$</div>
